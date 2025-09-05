@@ -1,0 +1,13 @@
+section>article{
+    margin: 50px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+section{
+    display: flex;
+}
+img{
+    width: 100%;
+
+}
