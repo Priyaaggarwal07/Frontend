@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncing Ball with CSS</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 3px solid black;
+        position: relative;
+        overflow: hidden;
+      }
+      .ball {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        animation: move 4s linear infinite;
+      }
+      @keyframes move {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: 260px;
+        }
+        50% {
+          top: 260px;
+          left: 260px;
+        }
+        75% {
+          top: 260px;
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 10vh;
+        padding: 0;
+      } 
+      @keyframes lefttoright {
+        0% {
+          transform: translateX(0px) rotate(360deg);
+        }
+      }
+
+      .ball {
+        width: 500px;
+        height: 500px;
+        background: orange;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 500px;
+        animation: lefttoright 75ms linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ball">DVD SONY</div>
+  </body>
+</html> -->
